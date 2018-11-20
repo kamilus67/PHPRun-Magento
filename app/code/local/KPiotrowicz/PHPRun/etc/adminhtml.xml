@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <phprun translate="title" module="kpiotrowicz_phprun">
+                    <title>Run script PHP</title>
+                    <action>adminhtml/phpscript</action>
+                    <sort_order>10</sort_order>
+                </phprun>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <phprun translate="title">
+                                <title>Run script PHP</title>
+                                <sort_order>10</sort_order>
+                            </phprun>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_phpscript_index>
+        <reference name="content">
+            <block type="adminhtml/template" name="excel" template="phprun/form.phtml" />
+        </reference>
+    </adminhtml_phpscript_index>
+</layout>

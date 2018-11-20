@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <KPiotrowicz_PHPRun>
+            <version>0.1.0</version>
+        </KPiotrowicz_PHPRun>
+    </modules>
+    <global>
+        <helpers>
+            <kpiotrowicz_phprun>
+                <class>KPiotrowicz_PHPRun_Helper</class>
+            </kpiotrowicz_phprun>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <KPiotrowicz_PHPRun before="Mage_Adminhtml">KPiotrowicz_PHPRun_Adminhtml</KPiotrowicz_PHPRun>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <kpiotrowicz_phprun>
+                    <file>kpiotrowicz_phprun.xml</file>
+                </kpiotrowicz_phprun>
+            </updates>
+        </layout>
+    </adminhtml>
+</config> 

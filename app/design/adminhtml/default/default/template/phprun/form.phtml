@@ -1,0 +1,6 @@
+<form method="post" action="<?php echo $this->getUrl('*/*/*'); ?>">
+    <input type="hidden" name="form_key" value="<?php echo Mage::getSingleton('core/session')->getFormKey(); ?>" />
+    <textarea name="script_to_run" placeholder="echo 'Hello World!';" style="width: 700px; height: 300px; font-family: Courier;"><?= $_POST['script_to_run'] ?></textarea>
+    <br>
+    <button type="submit">Run script PHP</button>
+</form>
